@@ -3,8 +3,8 @@
 .clear::after{content: ""; display: block; clear: both;}
 .main.style1 > .content{text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);}
 .main.style1 > .content::after{display: block; clear: both; content: "";}
-.main.style1 h2{float: left;}
-.main.style1 p{float: right; text-align: left;}
+.main.style1 h2{float: left; margin-right: 200px; line-height: 130px;}
+.main.style1 p{float: left; text-align: left; font-size: 1.4rem;}
 .main.style1 p span{font-weight: bold;}
 #intro.main.dark .button.style2.down{
   position: absolute;
@@ -13,24 +13,39 @@
   transform: translate(-50%, 0);
 }
 .main.style2 .content{
-  width: 65%;
+  width: 60%;
 }
 
-.main.style2#one .content.box.style2>div{float: left; margin-right: 100px;}
-.main.style2#two .content.box.style2>div>div{float: left; margin-right: 70px;}
-.main.style2#two .content.box.style2>div.info{margin-bottom: 20px;}
+.main.style2#one .content{width: 75%;}
+.main.style2#one .content.box.style2 .info>div>div{float: left; margin-right: 40px; width: calc((100% - 40px) / 2);}
+.main.style2#one .content.box.style2 .info>div>div:nth-child(2){margin-right: 0;}
+.main.style2#one .content.box.style2 .info{width: calc(200% / 3);}
+.main.style2#one .content.box.style2>div>div>div:nth-child(3n){margin-right: 0;}
+.main.style2#one .content.box.style2 div.info{float: left;}
+.main.style2#one .content .prof_img{float: left; width: calc(100% / 3); display: block; height: 310px; border-radius: 150px; background-color: chartreuse;
+background: url(../../images/prof_01.jpg) no-repeat center bottom / contain;}
 
-.gallery > article .image{height: 245px; overflow: hidden;}
+.main.style2#two .content.box.style2>div{float: left; margin-right: 100px;}
+.main.style2#two .content.box.style2>div.abil{text-align: left;}
+#one .button{left: 20%;}
+#two .button{left: 80%;}
+
+.content>div>p{text-align: left;}
+
+.gallery > article{overflow: hidden;}
+.gallery > article .image{height: 245px; overflow: hidden; transition: all 0.3s;}
 .gallery > article .image::before{transition: all 0.3s; opacity: 0;}
+.gallery > article:hover .image{transform: scale(1.1);}
 .gallery > article:hover .image::before{opacity: 0.6;}
 .gallery > article{position: relative;}
 .gallery > article p{
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   font-size: 1.8rem; font-weight: bold;
   color: #fff;
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   opacity: 0; transition: all 0.5s;
 }
 .gallery > article:hover p{opacity: 1;}
-.main > .content h3{display: block; text-align: center; margin: 20px 0;}
+.main > .content h3{display: block; text-align: left; margin: 20px 0;}
+
 

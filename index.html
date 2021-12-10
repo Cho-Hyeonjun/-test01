@@ -36,8 +36,19 @@
 					<header>
 						<h2>Welcome.</h2>
 					</header>
-					<p>반갑습니다. <br>
-						<span>신입 웹디자이너&웹퍼블리셔 조현준</span>입니다.</p>
+					<div>
+						<p>반갑습니다. <br>
+							신입
+							<span class="txt-rotate"
+							data-period="100"
+							data-rotate='[ "웹퍼블리셔", "웹디자이너"]'>
+							</span> <br> 조현준입니다.</p>
+					</div>
+					
+						<!-- <span>신입 웹디자이너&웹퍼블리셔 조현준</span>입니다. -->
+					
+
+
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
 					</footer>
@@ -50,35 +61,44 @@
 					<header>
 						<h2>Profile</h2>
 					</header>
-					<div class="info clear">
-						<div>
-							<h3>Name</h3>
-							<p>조현준</p>
-						</div>
-						<div>
-							<h3>Age</h3>
-							<p>28</p>
-						</div>
-						<div>
-							<h3>Email</h3>
-							<p>Hyeonjun9662@gmail.com</p>
-						</div>
-						<div>
-							<h3>Adress</h3>
-							<p>부산 금정구</p>
-						</div>
-					</div><!--.info-->
-					<div class="edu clear">
-						<div>
-							<h3>Educate</h3>
-							<p>부산IT교육센터 웹디자인과정수료 <br>
-							2021.07.02 ~ 2021.12.27</p>
-						</div>
-						<div>
-							<h3>License</h3>
-							<p>웹디자인기능사(예정) <br> 2종 보통 운전면허</p>
-						</div>
-					</div><!--.edu-->
+					<div class="clear">
+						<div class="info clear">
+							<div class="prof clear">
+								<div>
+									<h3>Name</h3>
+									<p>조현준</p>
+								</div>
+								<div>
+									<h3>Age</h3>
+									<p>28</p>
+								</div>
+							</div>
+							<div class="adre clear">
+								<div>
+									<h3>Email</h3>
+									<p>Hyeonjun9662@gmail.com</p>
+								</div>
+								<div>
+									<h3>Adress</h3>
+									<p>부산 금정구</p>
+								</div>
+							</div>
+							<div class="lice clear">
+								<div>
+									<h3>Educate</h3>
+									<p>부산IT교육센터 웹디자인과정수료 <br>
+									2021.07.02 ~ 2021.12.27</p>
+								</div>
+								<div>
+									<h3>License</h3>
+									<p>웹디자인기능사(예정) <br> 2종 보통 운전면허</p>
+								</div>
+							</div>
+						</div><!--.info-->
+						<div class="prof_img">
+
+						</div><!--.prof_img-->
+					</div>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -112,11 +132,11 @@
 				<div class="content">
 					<header>
 						<h2>My Work</h2>
-						<p>HTML, CSS, jQuery를 활용한 웹 포트폴리오</p>
 					</header>
 					
 					<div>
 						<h3>웹 디자인</h3>
+						<p>HTML, CSS, jQuery를 활용한 웹 포트폴리오</p>
 					</div>
 
 					<!-- Gallery  -->
@@ -138,7 +158,7 @@
 									<img src="images/fulls/03_02.jpg" title="소리바다 모바일 페이지 리뉴얼" alt="포폴03" />
 									<p>소리바다 <br> 모바일 웹페이지 <br> 리뉴얼</p></a>
 							</article>
-							<article class="from-left">
+							<article class="from-right">
 								<a href="http://naver.com" class="image fit" data-poptrox="ignore" target="_blank">
 									<img src="images/fulls/04_02.jpg" title="넥스필드 웹 페이지 리뉴얼" alt="포폴04" />
 									<p>넥스필드 <br> 웹페이지 <br> 리뉴얼</p></a>
@@ -147,6 +167,7 @@
 
 						<div>
 							<h3>그래픽</h3>
+							<p>Photoshop, Illustrator를 활용한 그래픽 포트폴리오</p>
 						</div>
 						<div class="gallery">
 							<article class="from-left">
@@ -170,8 +191,8 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2>Say Hello.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+						<h2>Contact</h2>
+						<p>아래에 작성해주신 메일로 이력서를 보내드립니다!</p>
 					</header>
 					<div class="box">
 						<form method="post" action="#">
