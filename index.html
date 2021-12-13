@@ -10,14 +10,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="assets/css/jquery.fancybox.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="assets/css/custom.css">
 		<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+		<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
+			<header id="header" class="clear">
 				<h1><a href="#">Cho_Portfolio</a></h1>
 				<nav>
 					<ul>
@@ -32,11 +34,11 @@
 
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content">
-					<header>
+				<div class="content clear">
+					<header class="clear">
 						<h2>Welcome.</h2>
 					</header>
-					<div>
+					<div class="clear">
 						<p>반갑습니다. <br>
 							신입
 							<span class="txt-rotate"
@@ -49,7 +51,7 @@
 					
 
 
-					<footer>
+					<footer class="clear">
 						<a href="#one" class="button style2 down">More</a>
 					</footer>
 				</div>
@@ -62,8 +64,10 @@
 						<h2>Profile</h2>
 					</header>
 					<div class="clear">
+						<div class="prof_img hidden">
+							프로필 이미지
+						</div><!--.prof_img-->
 						<div class="info clear">
-							<div class="prof clear">
 								<div>
 									<h3>Name</h3>
 									<p>조현준</p>
@@ -72,32 +76,30 @@
 									<h3>Age</h3>
 									<p>28</p>
 								</div>
-							</div>
-							<div class="adre clear">
-								<div>
+								<!-- <div>
 									<h3>Email</h3>
 									<p>Hyeonjun9662@gmail.com</p>
 								</div>
 								<div>
 									<h3>Adress</h3>
 									<p>부산 금정구</p>
-								</div>
-							</div>
-							<div class="lice clear">
+								</div> -->
 								<div>
 									<h3>Educate</h3>
-									<p>부산IT교육센터 웹디자인과정수료 <br>
-									2021.07.02 ~ 2021.12.27</p>
+									<p>
+										<span>부산IT교육센터</span>
+										<span>반응형웹디자인&웹퍼블리셔</span>
+										<span>2021.07.02 ~ 2021.12.27</span>
+									</p>
 								</div>
 								<div>
 									<h3>License</h3>
-									<p>웹디자인기능사(예정) <br> 2종 보통 운전면허</p>
+									<p>
+										<span>웹디자인기능사(예정)</span>
+										<span>2종 보통 운전면허</span>
+										</p>
 								</div>
-							</div>
 						</div><!--.info-->
-						<div class="prof_img">
-
-						</div><!--.prof_img-->
 					</div>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
@@ -111,15 +113,26 @@
 					</header>
 					<div class="abil">
 						<div>
-							<h3>Graphic</h3>
-							<p>Photoshop/Illustrator CS6</p>
+							<h3 class="clear">
+								<i class="fas fa-palette"></i> 
+								<span>Graphic</span>
+							</h3>
+							<p>
+								Photoshop, Illustrator CS6
+							</p>
 						</div>
 						<div>
-							<h3>Publishing</h3>
+							<h3>
+								<i class="fas fa-code"></i>
+								<span>Publishing</span>
+							</h3>
 							<p>HTML, CSS, jQuery</p>
 						</div>
 						<div>
-							<h3>Etc</h3>
+							<h3>
+								<i class="fas fa-ellipsis-h"></i>
+								<span>Etc</span>
+							</h3>
 							<p>Microsoft Ofiice Excel, Word, PowerPoint, 한글</p>
 						</div>
 					</div>
@@ -144,24 +157,47 @@
 							<article class="from-left">  
 								<a href="https://cho-hyeonjun.github.io/Casio_port/index.html" class="image fit" data-poptrox="ignore" target="_blank">
 									<img src="images/fulls/01_03.jpg" title="카시오 코리아 반응형 웹페이지 리뉴얼" alt="포폴01"/>
-									<p>카시오 코리아 <br> 반응형 웹페이지 리뉴얼</p>
+									<p>
+										<span>
+											카시오 코리아
+										</span>
+										<span>
+											반응형 웹페이지
+										</span>
+										<span>
+											리뉴얼
+										</span>
+									</p>
 								</a>
 							</article>
 							<article class="from-right">
 								<a href="http://naver.com" class="image fit" data-poptrox="ignore" target="_blank">
 									<img src="images/fulls/02_02.jpg" title="스미그 드립머신 랜딩페이지" alt="포폴02" />
-									<P>스미그 드립머신 <br> 랜딩페이지 제작</P>
+									<P>
+										<span>스미그 드립머신</span>
+										<span>랜딩페이지 제작</span>
+									</P>
 								</a>
 							</article>
 							<article class="from-left">
-								<a href="http://naver.com" class="image fit" data-poptrox="ignore" target="_blank">
+								<a href="https://cho-hyeonjun.github.io/Soribada/" class="image fit" data-poptrox="ignore" target="_blank">
 									<img src="images/fulls/03_02.jpg" title="소리바다 모바일 페이지 리뉴얼" alt="포폴03" />
-									<p>소리바다 <br> 모바일 웹페이지 <br> 리뉴얼</p></a>
+									<p>
+										<span>소리바다</span>
+										<span>모바일 웹페이지</span>
+										<span>리뉴얼</span>
+									</p>
+								</a>
 							</article>
 							<article class="from-right">
 								<a href="https://cho-hyeonjun.github.io/Nexfield_port/" class="image fit" data-poptrox="ignore" target="_blank">
 									<img src="images/fulls/04_02.jpg" title="넥스필드 웹 페이지 리뉴얼" alt="포폴04" />
-									<p>넥스필드 <br> 웹페이지 <br> 리뉴얼</p></a>
+									<p>
+										<span>넥스필드</span>
+										<span>웹페이지</span>
+										<span>리뉴얼</span>	
+									</p>
+								</a>
 							</article>
 						</div><!--.gallery-->
 
@@ -169,17 +205,23 @@
 							<h3>그래픽</h3>
 							<p>Photoshop, Illustrator를 활용한 그래픽 포트폴리오</p>
 						</div>
-						<div class="gallery">
+						<div class="gallery graphic">
 							<article class="from-left">
-								<a href="images/fulls/05_02.jpg" class="image fit">
-									<img src="images/thumbs/05_02.png" title="설기숲 로고 제작" alt="포폴05" />
-									<p>설기숲 브랜드 <br> 로고 제작</p>
+								<a href="images/fulls/05_02.jpg" class="image fit" >
+									<img class="brand" src="images/thumbs/05_02.png" title="설기숲 로고 제작" alt="포폴05" />
+									<p>
+										<span>설기숲 브랜드</span>
+										 <span>로고 제작</span>
+									</p>
 								</a>
 							</article>
 							<article class="from-right">
 								<a href="images/fulls/06_02.jpg" class="image fit">
-									<img src="images/thumbs/06_02.jpg" title="떡볶이 홍보 포스터" alt="포폴05" />
-									<p>신제품 떡볶이 <br> 홍보 포스터 제작</p>
+									<img class="newpro" src="images/thumbs/06_02.jpg" title="떡볶이 홍보 포스터" alt="포폴05" />
+									<p>
+										<span>신제품 떡볶이</span>
+										<span>홍보 포스터 제작</span> 
+									</p>
 								</a>
 							</article>
 						</div><!--.gallery-->
@@ -189,22 +231,39 @@
 
 		<!-- Contact -->
 			<section id="contact" class="main style3 secondary">
-				<div class="content">
+				<div class="content clear">
 					<header>
 						<h2>Contact</h2>
-						<p>아래에 작성해주신 메일로 이력서를 보내드립니다!</p>
+						<!-- <p>아래에 작성해주신 메일로 이력서를 보내드립니다!</p> -->
 					</header>
-					<div class="box">
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-							</div>
-							<ul class="actions special">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</form>
+					<div class="adre_box clear">
+						<div class="adress">
+							<p>
+								E-mail : hyeonjun9662@gmail.com
+							</p>
+							<p>
+								<a href="
+								Kakao : https://open.kakao.com/o/snZ5kOOd">
+								Kakao : https://open.kakao.com/o/snZ5kOOd</a>
+							</p>
+						</div>
+						<div class="qrcode hidden">
+							큐알코드
+						</div>
+					</div>
+					<div class="downlord clear">
+						<div class="resume">
+							<a href="https://cho-hyeonjun.github.io/Resume/cho_resume.pdf">
+								<img src="images/dark-arrow04.png" alt="이력서 다운로드">
+							</a>
+							<p>이력서</p>
+						</div>
+						<div class="introduce">
+							<a href="https://cho-hyeonjun.github.io/Introduce/cho_introduce.pdf">
+								<img src="images/dark-arrow04.png" alt="자기소개서 다운로드">
+							</a>
+							<p>자기소개서</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -212,20 +271,22 @@
 		<!-- Footer -->
 			<footer id="footer">
 
+				<p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.</p>
+				<p>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있습니다.</p>
 				<!-- Icons -->
-					<ul class="icons">
+					<!-- <ul class="icons">
 						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
 						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-					</ul>
+					</ul> -->
 
 				<!-- Menu -->
-					<ul class="menu">
+					<!-- <ul class="menu">
 						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-					</ul>
+					</ul> -->
 
 			</footer>
 
@@ -237,6 +298,7 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/jquery.fancybox.pack.js"></script>
 			<script src="assets/js/main.js"></script>
 
 	</body>
