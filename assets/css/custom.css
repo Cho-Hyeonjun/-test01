@@ -123,18 +123,55 @@ border-radius: 50%; width: 30px; height: 30px; padding: 5px; margin-right: 10px;
 }
 footer{font-size: 12px;}
 
-.poptrox-popup .nav-next, .poptrox-popup .nav-previous{width: 0 !important;}
-.poptrox-popup .pic{height: 80vh !important; width: 600px; overflow-y: scroll; overflow-x: hidden;}
-.poptrox-popup .pic img{width: 100%; max-width: none !important; max-height: none !important; }
 
+
+
+
+
+
+
+
+
+
+
+
+#glayLayer{position: fixed; top: 0; left: 0; display: none;
+  width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);}
+#overLayer{ display: none;
+  width: 80%; height: 80vh; padding: 10px; background-color: #fff; min-height: 100px;
+  position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}  
+#overLayer img{width: 100%;}  
+p.close{
+  color: transparent; font-size: 0;
+  width: 50px; height: 50px;
+  background: rgba(0, 0, 0, 0.1) url(images/poptrox-closer.svg) no-repeat center / contain;
+  position: fixed; top: 100px; right: 20px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  border: 1px solid #fff;
+}
+p.close:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
 /* 스크롤바 설정*/ 
-.poptrox-popup .pic::-webkit-scrollbar{ 
+#overLayer::-webkit-scrollbar{ 
   /* 스크롤바 막대 너비 설정 */ width: 6px; } 
 /* 스크롤바 막대 설정*/ 
-.poptrox-popup .pic::-webkit-scrollbar-thumb{ 
+#overLayer::-webkit-scrollbar-thumb{ 
   height: 17%; background-color: rgba(0,0,0,0.5); /* 스크롤바 둥글게 설정 */ border-radius: 10px; } 
 /* 스크롤바 뒷 배경 설정*/ 
-.poptrox-popup .pic::-webkit-scrollbar-track{ background-color: rgba(0,0,0,0); }
+#overLayer::-webkit-scrollbar-track{ background-color: rgba(0,0,0,0); }
+
+
+
+
+
+
+
+
+
 
 
 /**********************Tablet***********************/
@@ -162,9 +199,11 @@ footer{font-size: 12px;}
   .main.style2#one .content.box.style2 div.info{float: none;}
   .main.style2#one .content{
     border-radius: 15px;
+    width: 100%;
   }
   .main.style2#two .content{
     border-radius: 15px;
+    width: 100%;
   }
   #intro.main.dark .button.style2.down{bottom: -50%;}
   .gallery > article .image img{ height: 245px; width: auto;}
@@ -184,8 +223,11 @@ footer{font-size: 12px;}
     float: left;
   }
 
-  .poptrox-popup .pic{
-    width: 250px;
+  p.close{
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    right: 10px;
   }
 
 
