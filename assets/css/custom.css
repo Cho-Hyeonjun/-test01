@@ -7,6 +7,7 @@
 /***************************PC*****************************/
 
 a{text-decoration: none; color: #39454b;}
+p{font-size: 16px;}
 .hidden{font-size: 0; color: transparent;}
 .clear::after{content: ""; display: block; clear: both;}
 .main.style1 > .content{text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);}
