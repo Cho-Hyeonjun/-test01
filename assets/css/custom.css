@@ -191,6 +191,10 @@ p.close:hover{
   .main.style2#one .content.box.style2 div.info{float: none; margin-right: 0; width: 100%;}
   .main.style2#one .content .prof_img{float: none; margin: 0 auto; width: 310px;}
 
+  #footer p{
+    font-size: 16px;
+  }
+
 }
 
 /*********************Mobile***********************/
@@ -233,6 +237,9 @@ p.close:hover{
     right: 10px;
   }
 
+  #footer p{
+    font-size: 12px;
+  }
 
 
 
