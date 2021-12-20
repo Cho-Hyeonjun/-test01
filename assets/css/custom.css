@@ -7,6 +7,7 @@
 /***************************PC*****************************/
 
 a{text-decoration: none; color: #39454b;}
+p{font-size: 18px;}
 .hidden{font-size: 0; color: transparent;}
 .clear::after{content: ""; display: block; clear: both;}
 .main.style1 > .content{text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);}
@@ -63,12 +64,14 @@ border-radius: 50%; width: 30px; height: 30px; padding: 5px; margin-right: 10px;
   background-position: center center;
   background-size: cover;
 }
-.gallery > article:nth-child(1) .image{background-image: url(../../images/fulls/01_03.jpg);}
-.gallery > article:nth-child(2) .image{background-image: url(../../images/fulls/02_02.jpg);}
-.gallery > article:nth-child(3) .image{background-image: url(../../images/fulls/03_02.jpg);}
-.gallery > article:nth-child(4) .image{background-image: url(../../images/fulls/04_02.jpg);}
+.gallery > article:nth-child(1) .image{background-image: url(../../images/thumbs/casio.jpg);}
+.gallery > article:nth-child(2) .image{background-image: url(../../images/thumbs/nexfield.jpg);}
+.gallery > article:nth-child(3) .image{background-image: url(../../images/thumbs/soribada.jpg);}
+.gallery > article:nth-child(4) .image{background-image: url(../../images/thumbs/work.jpg);}
 .gallery.graphic > article:nth-child(1) .image{background-image: url(../../images/thumbs/05_02.png);}
-.gallery.graphic > article:nth-child(2) .image{background-image: url(../../images/thumbs/06_02.jpg);}
+.gallery.graphic > article:nth-child(2) .image{background-image: url(../../images/thumbs/smeg.jpg);
+  background-position: top center;
+}
 .gallery > article:hover .image img{transform: scale(1.1);}
 .gallery > article:hover .image::before{opacity: 1;}
 .gallery > article{position: relative;}
