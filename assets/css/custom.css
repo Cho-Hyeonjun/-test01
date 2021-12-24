@@ -23,7 +23,7 @@ p{font-size: 18px;}
 .main.style1 .video .video_ray::after{
   display: block; content: "";
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute; top: 0; left: 0;
 }
 .main.style1 .video .content{
@@ -32,8 +32,8 @@ p{font-size: 18px;}
   transform: translate(-50%, -50%);
 }
 .main.style1{padding: 0;}
-.main.style1 > .content{text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);}
-.main.style1 > .content::after{display: block; clear: both; content: "";}
+.main.style1 .content{text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);}
+.main.style1 .content::after{display: block; clear: both; content: "";}
 .main.style1 h2{float: left; margin-right: 200px; line-height: 130px;}
 .main.style1 p{float: left; text-align: left; font-size: 1.4rem;}
 .main.style1 p span{font-weight: bold;}
@@ -60,10 +60,8 @@ p{font-size: 18px;}
   margin-right: 40px;
 }
 .main.style2#one .info > div{transition: all 0.3s;}
-.main.style2#one .info > div p{opacity: 0.7;}
-.main.style2#one .info > div:hover p{
-  opacity: 1;
-}
+.main.style2#one .info > div p{color: #999; transition: all 0.3s;}
+.main.style2#one .info > div:hover p{color: #000;}
 
 .main.style2#two .content{
   width: 60%;

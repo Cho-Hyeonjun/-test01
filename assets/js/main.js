@@ -6,6 +6,11 @@
 
 (function($) {
 
+	//popup
+	$(".popup_mobile").click(function(){
+		window.open('https://cho-hyeonjun.github.io/Soribada/', 'soribade', 'width=400, height=500, top=20, left=100')
+	});
+
 	var	$window = $(window),
 		$body = $('body'),
 		$header = $('#header'),
